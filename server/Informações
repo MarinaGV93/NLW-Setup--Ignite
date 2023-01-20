@@ -1,0 +1,48 @@
+Criar package.json:
+npm init -y
+
+Framework:
+fastify
+
+TypeScript:
+"...".ts
+Tipágem estática (trazer inteligencia para o VS para identificar possíveis erros antes do codigo ir para a produção)
+
+Para o node interpretar TypeScript:
+Dependencias de desenvolvimento:
+npm i typescript -D
+Rodar:
+npx tsc/typescript --init
+Mudar o Target no tsconfig.json:
+es2020 "ou o mais recente"
+Rodar o codigo:
+npm i tsx -D //Permite executar um arq do node com typescript sem precisar fazer alguma conversao do arq
+npx tsx src/server.ts
+
+Mudar o scripts dev:
+tsx src/server.ts
+Rodar:
+npm run dev
+
+Toda vez q altera o arquivo, rode o script de novo:
+Colocar "tsx watch src/server.ts" no dev
+Rodar:
+npm run dev
+
+Instalar o prima (ORM):
+npm i -D prisma
+Cliente do prisma:
+npm i -D @prisma/client  
+Usar o BD tipo SQLite:
+npx prisma init --datasource-provider SQLite
+Mostrar quais tabelas vai ter no BD:
+No arq schema.prisma  
+Rodar:
+npx prisma migrate dev "Vai ler o arq e automaticamente criar um arq SQL q vai fazer as alteraçoes no BD"
+Visualizar o BD:
+npx prisma studio
+
+CORS:
+Ve quais aplicaçoes vao poder acessar os dados do back
+Instalar:
+npm i @fastify/cors
