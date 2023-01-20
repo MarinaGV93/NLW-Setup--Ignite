@@ -1,0 +1,22 @@
+Vitejs:
+framework 
+Instalar:
+npm create vite@latest
+
+
+Componente:
+Reaproveitar/isolar
+Propriedade:
+Uma informaçao enviada para modificar um componente visual ou comportamentalmente
+
+Biblioteca CSS:
+Tailwindcss - plugin do postcss
+Instalar:
+npm install -D tailwindcss postcss autoprefixer
+Postcss:
+Ferramenta para automatizar tarefas dentro do css
+autoprefixer:
+vai adicionar os prefixos de browser (-webkit....)
+Rodar:
+npx tailwindcss init -p
+Modificar content em tailwind.config.cjs:

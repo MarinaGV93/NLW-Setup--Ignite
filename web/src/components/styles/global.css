@@ -1,0 +1,4 @@
+/* Importar as configurações do Tailwind */
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
